@@ -1,0 +1,16 @@
+.nav {
+
+  &__list {
+    @include flex-h-center;
+    gap: 44px;
+  }
+
+  &__item {}
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--dark);
+  }
+}

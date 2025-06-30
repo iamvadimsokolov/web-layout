@@ -1,0 +1,57 @@
+.header {
+
+  &__top {
+    @include flex-all-sb;
+    padding: 35px 0;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  &__logo {}
+
+  &__contacts {
+    @include flex-v-center;
+    gap: var(--gap);
+  }
+
+  &__contact {
+    @include flex-column-end;
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--dark);
+  }
+
+  &__link {
+    border-bottom: 1px solid currentColor;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+    color: var(--accent);
+  }
+
+  &__bottom {
+    @include flex-all-sb;
+    padding-top: 16px;
+  }
+
+  &__btn {
+    @include flex-h-center;
+    gap: 4px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--accent);
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+  }
+}
