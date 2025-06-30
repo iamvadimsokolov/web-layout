@@ -1,0 +1,6 @@
+.burger {
+  @include burger;
+  display: none;
+
+  &__line {}
+}
